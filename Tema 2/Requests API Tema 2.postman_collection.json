@@ -1,0 +1,2347 @@
+{
+	"info": {
+		"_postman_id": "3b7bb96b-337a-4add-a909-975a62fec39c",
+		"name": "Requests API Tema 2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/employees 200",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8000/employees",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"employees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/employees/5 200",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8000/employees/5",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"employees",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/employees/50 404",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8000/employees/50",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"employees",
+						"50"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/employees/1/jobs 200",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8000/employees/1/jobs",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"employees",
+						"1",
+						"jobs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/employees/5/jobs 204",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8000/employees/5/jobs",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"employees",
+						"5",
+						"jobs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/employees/15/jobs 404",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8000/employees/15/jobs",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"employees",
+						"15",
+						"jobs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/employees/1/jobs/1 200",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8000/employees/1/jobs/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"employees",
+						"1",
+						"jobs",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/employees/15/jobs/1 404",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8000/employees/15/jobs/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"employees",
+						"15",
+						"jobs",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/employees/1/jobs/3 404",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8000/employees/1/jobs/3",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"employees",
+						"1",
+						"jobs",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/departments 200",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8000/departments",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"departments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/departments/1 200",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8000/departments/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"departments",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/departments/4 404",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8000/departments/4",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"departments",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/departments/2/employees 200",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8000/departments/2/employees",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"departments",
+						"2",
+						"employees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/departments/10/employees 404",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8000/departments/10/employees",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"departments",
+						"10",
+						"employees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/departments/1/employees/1 200",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8000/departments/1/employees/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"departments",
+						"1",
+						"employees",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/departments/10/employees/1 404",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8000/departments/10/employees/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"departments",
+						"10",
+						"employees",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/departments/1/employees/10 404",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8000/departments/1/employees/10",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"departments",
+						"1",
+						"employees",
+						"10"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/departments/1/employees/1/jobs 200",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8000/departments/1/employees/1/jobs",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"departments",
+						"1",
+						"employees",
+						"1",
+						"jobs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/departments/10/employees/4/jobs 404",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8000/departments/10/employees/4/jobs",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"departments",
+						"10",
+						"employees",
+						"4",
+						"jobs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/departments/1/employees/4/jobs 404",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8000/departments/1/employees/4/jobs",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"departments",
+						"1",
+						"employees",
+						"4",
+						"jobs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/departments/1/employees/5/jobs 204",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8000/departments/1/employees/5/jobs",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"departments",
+						"1",
+						"employees",
+						"5",
+						"jobs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/departments/1/employees/1/jobs/1 200",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8000/departments/1/employees/1/jobs/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"departments",
+						"1",
+						"employees",
+						"1",
+						"jobs",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/departments/10/employees/1/jobs/4 404",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8000/departments/10/employees/1/jobs/4",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"departments",
+						"10",
+						"employees",
+						"1",
+						"jobs",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/departments/1/employees/16/jobs/4 404",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8000/departments/1/employees/16/jobs/4",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"departments",
+						"1",
+						"employees",
+						"16",
+						"jobs",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/departments/1/employees/1/jobs/6 404",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8000/departments/1/employees/1/jobs/6",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"departments",
+						"1",
+						"employees",
+						"1",
+						"jobs",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/departments/1/jobs 200",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8000/departments/1/jobs",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"departments",
+						"1",
+						"jobs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/departments/4/jobs 404",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8000/departments/4/jobs",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"departments",
+						"4",
+						"jobs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/departments/1/jobs/3 200",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8000/departments/1/jobs/3",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"departments",
+						"1",
+						"jobs",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/departments/10/jobs/1 404",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8000/departments/10/jobs/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"departments",
+						"10",
+						"jobs",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/departments/1/jobs/9 404",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8000/departments/1/jobs/9",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"departments",
+						"1",
+						"jobs",
+						"9"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/jobs 200",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8000/jobs",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"jobs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/jobs/9 200",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8000/jobs/9",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"jobs",
+						"9"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/jobs/14 404",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8000/jobs/14",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"jobs",
+						"14"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/any/other/route 404",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8000/any/other/route",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"any",
+						"other",
+						"route"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/employees 415",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/xml",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8000/employees",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"employees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/employees 201",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\": 11,\n\t\"fName\": \"Name1\",\n\t\"lName\": \"Name2\",\n\t\"position\": \"Developer\",\n\t\"address\": \"Str. Victoria\",\n\t\"salary\": 3000,\n\t\"departmentId\": 2,\n\t\"hireDate\": \"2019/01/01\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8000/employees",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"employees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/employees 400",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"ifd\": 11,\n\t\"fName\": \"Name1\",\n\t\"lName\": \"Name2\",\n\t\"position\": \"Developer\",\n\t\"address\": \"Str. Victoria\",\n\t\"salary\": 3000,\n\t\"departmentId\": 2,\n\t\"hireDate\": \"2019/01/01\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8000/employees",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"employees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/employees 409",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\": 11,\n\t\"fName\": \"Name1\",\n\t\"lName\": \"Name2\",\n\t\"position\": \"Developer\",\n\t\"address\": \"Str. Victoria\",\n\t\"salary\": 3000,\n\t\"departmentId\": 2,\n\t\"hireDate\": \"2019/01/01\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8000/employees",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"employees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/employees/3 415",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/xml",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8000/employees/3",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"employees",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/employees/12 201",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"fName\": \"Name1\",\n\t\"lName\": \"Name2\",\n\t\"position\": \"Developer\",\n\t\"address\": \"Str. Victoria\",\n\t\"salary\": 3000,\n\t\"departmentId\": 2,\n\t\"hireDate\": \"2019/01/01\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8000/employees/12",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"employees",
+						"12"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/employees/12 400",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"fNName\": \"Name1\",\n\t\"lName\": \"Name2\",\n\t\"position\": \"Developer\",\n\t\"address\": \"Str. Victoria\",\n\t\"salary\": 3000,\n\t\"departmentId\": 2,\n\t\"hireDate\": \"2019/01/01\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8000/employees/12",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"employees",
+						"12"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/employees/3 409",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"fName\": \"Name1\",\n\t\"lName\": \"Name2\",\n\t\"position\": \"Developer\",\n\t\"address\": \"Str. Victoria\",\n\t\"salary\": 3000,\n\t\"departmentId\": 2,\n\t\"hireDate\": \"2019/01/01\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8000/employees/3",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"employees",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/employees/3/jobs 201",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\": 10,\n\t\"company\": \"Company\",\n\t\"position\": \"Boss\",\n\t\"address\": \"Str. Victoria\",\n\t\"startDate\": \"2018/01/01\",\n\t\"endDate\": \"2019/01/01\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8000/employees/3/jobs",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"employees",
+						"3",
+						"jobs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/employees/3/jobs 400",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"iDd\": 10,\n\t\"company\": \"Company\",\n\t\"position\": \"Boss\",\n\t\"address\": \"Str. Victoria\",\n\t\"startDate\": \"2018/01/01\",\n\t\"endDate\": \"2019/01/01\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8000/employees/3/jobs",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"employees",
+						"3",
+						"jobs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/employees/3/jobs 409",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\": 3,\n\t\"company\": \"Company\",\n\t\"position\": \"Boss\",\n\t\"address\": \"Str. Victoria\",\n\t\"startDate\": \"2018/01/01\",\n\t\"endDate\": \"2019/01/01\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8000/employees/3/jobs",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"employees",
+						"3",
+						"jobs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/employees/3/jobs/4 415",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/xml",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8000/employees/3/jobs/4",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"employees",
+						"3",
+						"jobs",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/employees/10/jobs/12 201",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"company\": \"Company\",\n\t\"position\": \"Boss\",\n\t\"address\": \"Str. Victoria\",\n\t\"startDate\": \"2018/01/01\",\n\t\"endDate\": \"2019/01/01\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8000/employees/10/jobs/12",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"employees",
+						"10",
+						"jobs",
+						"12"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/employees/3/jobs/10 400",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"coOmpany\": \"Company\",\n\t\"position\": \"Boss\",\n\t\"address\": \"Str. Victoria\",\n\t\"startDate\": \"2018/01/01\",\n\t\"endDate\": \"2019/01/01\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8000/employees/3/jobs/10",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"employees",
+						"3",
+						"jobs",
+						"10"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/employees/3/jobs/10 409",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"company\": \"Company\",\n\t\"position\": \"Boss\",\n\t\"address\": \"Str. Victoria\",\n\t\"startDate\": \"2018/01/01\",\n\t\"endDate\": \"2019/01/01\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8000/employees/3/jobs/10",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"employees",
+						"3",
+						"jobs",
+						"10"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/departments 415",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/xml",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8000/departments",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"departments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/departments 201",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\": 4,\n\t\"deptName\": \"Research\",\n\t\"deptManagerId\": 4\n}"
+				},
+				"url": {
+					"raw": "localhost:8000/departments",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"departments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/departments 400",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"iDd\": 4,\n\t\"deptName\": \"Research\",\n\t\"deptManagerId\": 4\n}"
+				},
+				"url": {
+					"raw": "localhost:8000/departments",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"departments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/departments 409",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\": 4,\n\t\"deptName\": \"Research\",\n\t\"deptManagerId\": 4\n}"
+				},
+				"url": {
+					"raw": "localhost:8000/departments",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"departments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/departments/1 415",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "<note>\r\n<to>Tove</to>\r\n<from>Jani</from>\r\n<heading>Reminder</heading>\r\n<body>Don't forget me this weekend!</body>\r\n</note>"
+				},
+				"url": {
+					"raw": "localhost:8000/departments/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"departments",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/departments/5 201",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"deptName\": \"Interns\",\n\t\"deptManagerId\": 7\n}"
+				},
+				"url": {
+					"raw": "localhost:8000/departments/5",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"departments",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/departments/1 400",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"depPtName\": \"Research\",\n\t\"deptManagerId\": 4\n}"
+				},
+				"url": {
+					"raw": "localhost:8000/departments/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"departments",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/departments/1 409",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"deptName\": \"Research\",\n\t\"deptManagerId\": 4\n}"
+				},
+				"url": {
+					"raw": "localhost:8000/departments/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"departments",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/jobs 415",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "whfuhqew fhbqewh fqer"
+				},
+				"url": {
+					"raw": "localhost:8000/jobs",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"jobs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/jobs 400",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"iDd\": 10,\n\t\"employeeId\": 8,\n\t\"company\": \"Real\",\n\t\"position\": \"CEO\",\n\t\"startDate\": \"2014/01/01\",\n\t\"endDate\": \"2015/01/01\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8000/jobs",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"jobs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/jobs 409",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\": 5,\n\t\"employeeId\": 8,\n\t\"company\": \"Real\",\n\t\"position\": \"CEO\",\n\t\"startDate\": \"2014/01/01\",\n\t\"endDate\": \"2015/01/01\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8000/jobs",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"jobs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/jobs 201",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\": 11,\n\t\"employeeId\": 8,\n\t\"company\": \"Real\",\n\t\"position\": \"CEO\",\n\t\"startDate\": \"2014/01/01\",\n\t\"endDate\": \"2015/01/01\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8000/jobs",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"jobs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/jobs/9 415",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\": 10,\n\t\"employeeId\": 8,\n\t\"company\": \"Real\",\n\t\"position\": \"CEO\",\n\t\"startDate\": \"2014/01/01\",\n\t\"endDate\": \"2015/01/01\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8000/jobs/9",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"jobs",
+						"9"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/jobs/13 201",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"employeeId\": 8,\n\t\"company\": \"Mega\",\n\t\"position\": \"CEO\",\n\t\"startDate\": \"2014/01/01\",\n\t\"endDate\": \"2015/01/01\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8000/jobs/13",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"jobs",
+						"13"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/jobs/9 409",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"employeeId\": 8,\n\t\"company\": \"Real\",\n\t\"position\": \"CEO\",\n\t\"startDate\": \"2014/01/01\",\n\t\"endDate\": \"2015/01/01\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8000/jobs/9",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"jobs",
+						"9"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/jobs/9 400",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"employeeIId\": 8,\n\t\"company\": \"Real\",\n\t\"position\": \"CEO\",\n\t\"startDate\": \"2014/01/01\",\n\t\"endDate\": \"2015/01/01\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8000/jobs/9",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"jobs",
+						"9"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/employees 405",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8000/employees",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"employees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/employees/3 200",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"fName\": \"Andreea\",\n    \"lName\": \"Muresan\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8000/employees/3",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"employees",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/employees/3 415",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/atom+xml",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8000/employees/3",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"employees",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/employees/3 400",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"fNName\": \"Andreea\",\n    \"lName\": \"Muresan\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8000/employees/3",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"employees",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/employees/320 404",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"fName\": \"Andreea\",\n    \"lName\": \"Muresan\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8000/employees/320",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"employees",
+						"320"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/departments 405",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8000/departments",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"departments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/departments/1 415",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/xml",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8000/departments/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"departments",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/departments/10 400",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8000/departments/10",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"departments",
+						"10"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/departments/5 200",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"deptName\": \"Research\",\n\t\"deptManagerId\": 8\n}"
+				},
+				"url": {
+					"raw": "localhost:8000/departments/5",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"departments",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/departments/15 404",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"deptName\": \"Research\",\n\t\"deptManagerId\": 8\n}"
+				},
+				"url": {
+					"raw": "localhost:8000/departments/15",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"departments",
+						"15"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/jobs 405",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8000/jobs",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"jobs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/jobs/9 415",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/atom+xml",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8000/jobs/9",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"jobs",
+						"9"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/jobs/9 400",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"coMmpany\": \"Real\",\n\t\"position\": \"CEO\",\n\t\"startDate\": \"2014/01/01\",\n\t\"endDate\": \"2015/01/01\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8000/jobs/9",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"jobs",
+						"9"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/jobs/9 200",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"company\": \"Test\",\n\t\"position\": \"Test position\",\n\t\"startDate\": \"2014/01/01\",\n\t\"endDate\": \"2015/01/01\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8000/jobs/9",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"jobs",
+						"9"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/other/route 404",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8000/other/route",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"other",
+						"route"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/employees 405",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8000/employees",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"employees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/employees/30 404",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8000/employees/30",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"employees",
+						"30"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/employees/12 200",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8000/employees/12",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"employees",
+						"12"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/departments 405",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8000/departments",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"departments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/departments/10 404",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8000/departments/10",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"departments",
+						"10"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/departments/5 200",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8000/departments/5",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"departments",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/jobs 405",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8000/jobs",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"jobs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/jobs/90 404",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8000/jobs/90",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"jobs",
+						"90"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/jobs/13 200",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8000/jobs/13",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"jobs",
+						"13"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
