@@ -1404,124 +1404,102 @@ class SimpleRequestHandler(BaseHTTPRequestHandler):
             self.status405()
         
         elif re.match('/employees/[\d]+$', self.path):
-            ctype, pdict = cgi.parse_header(self.headers['content-type'])
-
-            ok = self.checkType(ctype)
-
-            if not ok:
-                self.status415()
             
+            print("Resource accessed: "  + self.path)
+            l = self.path.split('/')
+
+            conn = sqlite3.connect('employees.db')
+            conn.execute("PRAGMA foreign_keys = ON")
+            c = conn.cursor()
+            query = 'SELECT * FROM employees where id = ' + l[2]
+            c.execute(query)
+            row = c.fetchone()
+
+            if row is None:
+                self.status404('Employee with id = ' + l[2] + ' not found !')
             else:
-                print("Resource accessed: "  + self.path)
-                l = self.path.split('/')
+                try:
+                    query = 'DELETE FROM employees WHERE id = ?'
+                    c.execute(query, (l[2],))
+                    conn.commit()
 
-                conn = sqlite3.connect('employees.db')
-                conn.execute("PRAGMA foreign_keys = ON")
-                c = conn.cursor()
-                query = 'SELECT * FROM employees where id = ' + l[2]
-                c.execute(query)
-                row = c.fetchone()
+                    # send the message back
+                    self.send_response(200)
+                    self.send_header("Content-type", "application/json")
+                    self.end_headers()
 
-                if row is None:
-                    self.status404('Employee with id = ' + l[2] + ' not found !')
-                else:
-                    try:
-                        query = '''DELETE FROM employees 
-                                    WHERE id = ?'''
-                        c.execute(query, l[2])
-                        conn.commit()
-
-                        # send the message back
-                        self.send_response(200)
-                        self.send_header("Content-type", "application/json")
-                        self.end_headers()
-
-                        #self.do_GET()
-                    except Exception:
-                        print('Delete error !')
-                        self.status400()
+                    #self.do_GET()
+                except Exception:
+                    print('Delete error !')
+                    self.status400()
 
         elif re.match('/departments$', self.path):
             self.status405()
 
         elif re.match('/departments/[\d]+$', self.path):
-            ctype, pdict = cgi.parse_header(self.headers['content-type'])
-
-            ok = self.checkType(ctype)
-
-            if not ok:
-                self.status415()
             
+            print("Resource accessed: "  + self.path)
+            l = self.path.split('/')
+
+            conn = sqlite3.connect('employees.db')
+            conn.execute("PRAGMA foreign_keys = ON")
+            c = conn.cursor()
+            query = 'SELECT * FROM departments where id = ' + l[2]
+            c.execute(query)
+            row = c.fetchone()
+
+            if row is None:
+                self.status404('Department with id = ' + l[2] + ' not found !')
             else:
-                print("Resource accessed: "  + self.path)
-                l = self.path.split('/')
+                try:
+                    query = '''DELETE FROM departments 
+                                WHERE id = ?'''
+                    c.execute(query, l[2])
+                    conn.commit()
 
-                conn = sqlite3.connect('employees.db')
-                conn.execute("PRAGMA foreign_keys = ON")
-                c = conn.cursor()
-                query = 'SELECT * FROM departments where id = ' + l[2]
-                c.execute(query)
-                row = c.fetchone()
+                    # send the message back
+                    self.send_response(200)
+                    self.send_header("Content-type", "application/json")
+                    self.end_headers()
 
-                if row is None:
-                    self.status404('Department with id = ' + l[2] + ' not found !')
-                else:
-                    try:
-                        query = '''DELETE FROM departments 
-                                    WHERE id = ?'''
-                        c.execute(query, l[2])
-                        conn.commit()
-
-                        # send the message back
-                        self.send_response(200)
-                        self.send_header("Content-type", "application/json")
-                        self.end_headers()
-
-                        #self.do_GET()
-                    except Exception:
-                        print('Delete error !')
-                        self.status400()
+                    #self.do_GET()
+                except Exception:
+                    print('Delete error !')
+                    self.status400()
 
         elif re.match('/jobs$', self.path):
             self.status405()
         
         elif re.match('/jobs/[\d]+$', self.path):
-            ctype, pdict = cgi.parse_header(self.headers['content-type'])
-
-            ok = self.checkType(ctype)
-
-            if not ok:
-                self.status415()
             
+            print("Resource accessed: "  + self.path)
+            l = self.path.split('/')
+
+            conn = sqlite3.connect('employees.db')
+            conn.execute("PRAGMA foreign_keys = ON")
+            c = conn.cursor()
+            query = 'SELECT * FROM jobhistory where id = ' + l[2]
+            c.execute(query)
+            row = c.fetchone()
+
+            if row is None:
+                self.status404('Job with id = ' + l[2] + ' not found !')
             else:
-                print("Resource accessed: "  + self.path)
-                l = self.path.split('/')
+                try:
+                    query = '''DELETE FROM jobhistory 
+                                WHERE id = ?'''
+                    c.execute(query, (l[2],))
+                    conn.commit()
 
-                conn = sqlite3.connect('employees.db')
-                conn.execute("PRAGMA foreign_keys = ON")
-                c = conn.cursor()
-                query = 'SELECT * FROM jobhistory where id = ' + l[2]
-                c.execute(query)
-                row = c.fetchone()
+                    # send the message back
+                    self.send_response(200)
+                    self.send_header("Content-type", "application/json")
+                    self.end_headers()
 
-                if row is None:
-                    self.status404('Job with id = ' + l[2] + ' not found !')
-                else:
-                    try:
-                        query = '''DELETE FROM jobhistory 
-                                    WHERE id = ?'''
-                        c.execute(query, l[2])
-                        conn.commit()
-
-                        # send the message back
-                        self.send_response(200)
-                        self.send_header("Content-type", "application/json")
-                        self.end_headers()
-
-                        #self.do_GET()
-                    except Exception:
-                        print('Delete error !')
-                        self.status400()
+                    #self.do_GET()
+                except Exception:
+                    print('Delete error !')
+                    self.status400()
         else:
             self.status404("Route not found !")
 
